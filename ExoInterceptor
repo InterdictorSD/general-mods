@@ -1,0 +1,104 @@
+mainypos=0 #This is a turning point modifier for in-game uses and to get better camera views.
+#Enjoy!
+
+model =
+  name: "ExoInterceptor"
+  level: 3
+  model: 5
+  size: 1.2
+  next: [407]
+  specs:
+    shield:
+      capacity: [165,215]
+      reload: [3.5,5.5]
+    generator:
+      capacity: [70,115]
+      reload: [16,24]
+    ship:
+      mass: 180
+      speed: [98,112]
+      rotation: [70,85]
+      acceleration: [65,80]
+  bodies:
+    main:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 0+mainypos
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-102,-84,-50,4,26,70,100,90,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,12,25,22,29,31,24,17,0]
+      height: [0,9,24,22,30,30,19,13,0]
+      texture: [1,63,10,1,11,13,1,17]
+      propeller: true
+      laser:
+        damage: [2,3]
+        rate: 2.4
+        type: 1
+        speed: [135,160]
+        number: 4
+        recoil: 10
+        angle: 4
+        error: 5
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -34+mainypos
+        z: 19
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-16,-1,10,30,40]
+        z: [5,2,0,0,0,0]
+      width: [0,9,12,10,0]
+      height: [0,9,12,10,0]
+      texture: [4,9,9,4]
+      propeller: false
+    cannons:
+      section_segments: 12
+      offset:
+        x: 47
+        y: 40+mainypos
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-50,-45,-20,0,20,50,55]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,10,10,15,10,0]
+      height: [0,5,15,14,18,12,0]
+      texture: [4,4,8,63,8,3]
+      angle: 0
+  wings:
+    main:
+      doubleside: true
+      offset:
+        x: 2
+        y: 86+mainypos
+        z: 0
+      length: [80,30]
+      width: [87,54,40]
+      texture: [11,63]
+      angle: [0,-30]
+      position: [-50,-20,16]
+      bump:
+        position: -10
+        size: 12
+    winglet:
+      doubleside: true
+      offset:
+        x: 12
+        y: 66+mainypos
+        z: 6
+      length: [0,50]
+      width: [0,50,27]
+      texture: [63]
+      angle: [0,54]
+      position: [0,0,20]
+      bump:
+        position: 10
+        size: 12
+
+return model;
