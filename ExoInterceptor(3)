@@ -71,6 +71,15 @@ model =
       height: [0,5,15,14,18,12,0]
       texture: [4,4,8,63,8,3]
       angle: 0
+      laser:
+        damage: [1,1.5]
+        rate: 4
+        type: 1
+        speed: [135,160]
+        number: 8
+        recoil: 5
+        angle: 4
+        error: 5
   wings:
     main:
       doubleside: true
