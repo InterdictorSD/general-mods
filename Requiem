@@ -1,0 +1,110 @@
+return model =
+  name: 'Requiem'
+  level: 2
+  model: 1
+  size: 1.2
+  next: [301,302]
+  specs:
+    shield:
+      capacity: [120,160]
+      reload: [4,5.5]
+    generator:
+      capacity: [60,95]
+      reload: [16,22]
+    ship:
+      mass: 100
+      speed: [115,137.5]
+      rotation: [90,110]
+      acceleration: [70,95]
+  bodies:
+    main:
+      section_segments: 9
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-104,-96,-100,-85,-62.5,-40,20,70,60]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,3.5,4,11,16,19,26,17,0]
+      height: [0,2.5,3,9,14,18,24,20,0]
+      texture: [3.9,16.9,3.9,3.9,63,3,18,16.9]
+      propeller: true
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -48
+        z: 16
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-12,2,30,44,51]
+        z: [-1.4,-2,-1,1,6.5]
+      width: [0,7,11,7,0]
+      height: [0,7,11,9,0]
+      texture: [4,9,4,4]
+    sideThruster:
+      section_segments: 6
+      offset:
+        x: 49
+        y: 17
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-52,-41,-20,0,18,23,14]
+        z: [0,0,0,0,0,0,0]
+      width: [0,7,11,13,11,9,0]
+      height: [0,7,11,13,11,9,0]
+      texture: [2.9,2.9,3.9,63,3.9,16.9]
+      propeller: true
+    cannons:
+      section_segments: 8
+      offset:
+        x: 59
+        y: -4
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,-1]
+        y: [-49,-52,-20,0,8,14,34]
+        z: [0,0,0,0,0,0,0]
+      width: [0,3,5,7,6,5,0]
+      height: [0,2,3,5,4.5,4,0]
+      texture: [17,3,4,63,63,4]
+      angle: 1.4
+      laser:
+        damage: [5,9]
+        rate: 2
+        type: 1
+        speed: [100,130]
+        number: 1
+        error: 0
+  wings:
+    connect:
+      doubleside: true
+      offset:
+        x: 9
+        y: 4
+        z: 12
+      length: [50]
+      width: [47,30]
+      angle: [-20]
+      position: [0,12]
+      texture: [18]
+      bump:
+        position: 10
+        size: 5
+    end:
+      doubleside: true
+      offset:
+        x: 11
+        y: 43
+        z: 11
+      length: [30]
+      width: [47,22]
+      angle: [45]
+      position: [0,14]
+      texture: [63]
+      bump:
+        position: 10
+        size: 5
