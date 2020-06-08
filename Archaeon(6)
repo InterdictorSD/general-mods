@@ -9,13 +9,13 @@ return model =
       capacity: [220,310]
       reload: [6,8.5]
     generator:
-      capacity: [120,210]
-      reload: [47.5,62.5]
+      capacity: [180,235]
+      reload: [42,57]
     ship:
-      mass: 160
-      speed: [92,105]
-      rotation: [80,120]
-      acceleration: [100,150]
+      mass: 245
+      speed: [88,98]
+      rotation: [85,125]
+      acceleration: [50,80]
   bodies:
     main:
       section_segments: 9
@@ -72,14 +72,14 @@ return model =
       height: [0,5,7,9,8,0]
       texture: [16.9,3.9,63,3.9]
       laser:
-        damage: [34,52]
-        rate: 3
-        type: 2
+        damage: [3.4,5.2]
+        rate: 3.4
+        type: 1
         speed: [120,180]
-        number: 1
-        recoil: 80
-        angle: 0
-        error: 0
+        number: 10
+        recoil: 4
+        angle: 5
+        error: 10
   wings:
     top:
       doubleside: true
