@@ -1,0 +1,139 @@
+return model =
+  name: 'Archaeon'
+  level: 6
+  model: 9
+  size: 1.6
+  next: [705]
+  specs:
+    shield:
+      capacity: [220,310]
+      reload: [6,8.5]
+    generator:
+      capacity: [120,210]
+      reload: [47.5,62.5]
+    ship:
+      mass: 160
+      speed: [92,105]
+      rotation: [80,120]
+      acceleration: [100,150]
+  bodies:
+    main:
+      section_segments: 9
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-103,-92,-78,-52,0,92,104,80]
+        z: [3,1,0,0,0,0,0,0]
+      width: [0,7,12,17,28,20,16,0]
+      height: [0,8,12,15,26,22,15,0]
+      texture: [2.9,2.9,63,8,18,3.9,16.9]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -47
+        z: 14
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-12,4,25,34,42]
+        z: [0,0.5,1.5,4,11]
+      width: [0,7,10,8,0]
+      height: [0,5,10,8,0]
+      texture: [4,9,9,4]
+    side:
+      section_segments: 10
+      offset:
+        x: 60
+        y: 10
+        z: -4
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-29,-14,-4,66,79,66]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,10,12,18,10,0]
+      height: [0,11,13,20,14,0]
+      texture: [3,63,18,4,16.9]
+      propeller: true
+    cannons:
+      section_segments: 6
+      offset:
+        x: 60
+        y: 21
+        z: -22
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-55,-60,-14,0,20,38]
+        z: [5,5,2,2.5,0,5]
+      width: [0,4,7,10,8,0]
+      height: [0,5,7,9,8,0]
+      texture: [16.9,3.9,63,3.9]
+      laser:
+        damage: [34,52]
+        rate: 3
+        type: 2
+        speed: [120,180]
+        number: 1
+        recoil: 80
+        angle: 0
+        error: 0
+  wings:
+    top:
+      doubleside: true
+      offset:
+        x: 15
+        y: 34
+        z: 11
+      length: [44]
+      width: [50,30]
+      angle: [-20]
+      position: [0,10]
+      texture: [8]
+      bump:
+        position: 10
+        size: 10
+    bottom:
+      doubleside: true
+      offset:
+        x: 15
+        y: 34
+        z: -7
+      length: [44]
+      width: [59,34]
+      angle: [10]
+      position: [-1,10]
+      texture: [4]
+      bump:
+        position: 10
+        size: 5
+    fin:
+      doubleside: true
+      offset:
+        x: 5
+        y: 64
+        z: 11
+      length: [34]
+      width: [59,27]
+      angle: [40]
+      position: [-1,14]
+      texture: [63]
+      bump:
+        position: 10
+        size: 5
+    main:
+      doubleside: true
+      offset:
+        x: 74
+        y: 44
+        z: -5
+      length: [59]
+      width: [59,27]
+      angle: [20]
+      position: [-1,14]
+      texture: [63]
+      bump:
+        position: 10
+        size: 5
