@@ -1,0 +1,137 @@
+return model =
+  name: 'Ark-Fighter'
+  level: 5
+  model: 8
+  size: 1.65
+  next: [609]
+  zoom: 1.2
+  specs:
+    shield:
+      capacity: [220,290]
+      reload: [7,11]
+    generator:
+      capacity: [90,130]
+      reload: [55,70]
+    ship:
+      mass: 200
+      speed: [90,105]
+      rotation: [40,60]
+      acceleration: [80,110]
+  bodies:
+    main:
+      section_segments: 9
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-100,-85,-62.5,-40,20,90,100,90]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,12,19,25,34,27,18,0]
+      height: [0,11,15,20,25,25,22,0]
+      texture: [1,63,63,10,11,1,16.9]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -60
+        z: 13
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-18,-5,20,30,40]
+        z: [-0.5,-3,0,0,9]
+      width: [0,7,14,12,0]
+      height: [0,7,14,12,0]
+      texture: [7,9,7,9]
+    side:
+      section_segments: 12
+      offset:
+        x: 44
+        y: 90
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-80,-70,-50,-15,-10,0,40,35]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,12,16,21,12,19,10,0]
+      height: [0,14,18,21,16,18,10,0]
+      texture: [1,1,11,1,63,10,17]
+      propeller: true
+      angle: 2
+    cannons:
+      section_segments: 8
+      offset:
+        x: 26
+        y: -30
+        z: 0
+      position:
+        x: [0,0,3,0,-4]
+        y: [-30,-35,20,50,55]
+        z: [0,0,0,0,0]
+      width: [0,5,9,5,0]
+      height: [0,5,5,5,0]
+      texture: [3,3,63,63]
+      angle: 0.5
+      laser:
+        damage: [13,18]
+        rate: 2
+        type: 2
+        speed: [120,180]
+        number: 1
+        recoil: 100
+        angle: 0
+        error: 0
+    mainCannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -70
+        z: -15
+      position:
+        x: [0,0,0,0,0]
+        y: [-30,-35,20,35,40]
+        z: [0,0,0,5,5]
+      width: [0,7,10,5,0]
+      height: [0,7,12,5,0]
+      texture: [3,3,2,2]
+      angle: 0
+      laser:
+        damage: [4,6]
+        rate: 8
+        type: 1
+        speed: [150,220]
+        number: 1
+        recoil: 0
+        angle: 0
+        error: 5
+  wings:
+    bottom:
+      doubleside: true
+      offset:
+        x: 54
+        y: 65
+        z: 0
+      length: [50]
+      width: [50,30]
+      angle: [-25]
+      position: [-20,10]
+      texture: [63]
+      bump:
+        position: 10
+        size: 10
+    top:
+      doubleside: true
+      offset:
+        x: 54
+        y: 65
+        z: 0
+      length: [50]
+      width: [50,30]
+      angle: [25]
+      position: [-20,10]
+      texture: [63]
+      bump:
+        position: 10
+        size: 10
