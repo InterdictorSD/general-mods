@@ -1,9 +1,9 @@
 return model =
   name: 'Requiem'
   level: 2
-  model: 1
+  model: 3
   size: 1.2
-  next: [301,302]
+  next: [305]
   specs:
     shield:
       capacity: [120,160]
