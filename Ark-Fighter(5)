@@ -2,7 +2,7 @@ return model =
   name: 'Ark-Fighter'
   level: 5
   model: 8
-  size: 1.65
+  size: 1.4
   next: [609]
   zoom: 1.1
   specs:
