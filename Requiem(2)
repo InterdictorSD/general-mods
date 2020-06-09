@@ -1,20 +1,20 @@
 return model =
-  name: 'Requiem'
+  name: "Requiem"
   level: 2
   model: 3
   size: 1.2
   next: [305]
   specs:
     shield:
-      capacity: [120,160]
-      reload: [4,5.5]
+      capacity: [70,120]
+      reload: [3.5,5]
     generator:
       capacity: [80,100]
-      reload: [11,18]
+      reload: [13,20]
     ship:
       mass: 100
       speed: [115,137.5]
-      rotation: [90,110]
+      rotation: [60,80]
       acceleration: [70,95]
   bodies:
     main:
