@@ -5,8 +5,8 @@ return model =
   size: 1.84
   specs:
     shield:
-      capacity: [550,550]
-      reload: [12,12]
+      capacity: [380,380]
+      reload: [14,14]
     generator:
       capacity: [600,600]
       reload: [110,110]
