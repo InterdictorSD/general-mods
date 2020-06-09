@@ -1,8 +1,5 @@
-mainypos=0 #This is a turning point modifier for in-game uses and to get better camera views.
-#Enjoy!
-
-model =
-  name: "ExoInterceptor"
+return model =
+  name: "Dream"
   level: 3
   model: 5
   size: 1.2
@@ -24,7 +21,7 @@ model =
       section_segments: 8
       offset:
         x: 0
-        y: 0+mainypos
+        y: 0
         z: 0
       position:
         x: [0,0,0,0,0,0,0,0,0]
@@ -47,7 +44,7 @@ model =
       section_segments: 8
       offset:
         x: 0
-        y: -34+mainypos
+        y: -34
         z: 19
       position:
         x: [0,0,0,0,0,0]
@@ -61,7 +58,7 @@ model =
       section_segments: 12
       offset:
         x: 47
-        y: 40+mainypos
+        y: 40
         z: 0
       position:
         x: [0,0,0,0,0,0,0]
@@ -85,7 +82,7 @@ model =
       doubleside: true
       offset:
         x: 2
-        y: 86+mainypos
+        y: 86
         z: 0
       length: [80,30]
       width: [87,54,40]
@@ -99,7 +96,7 @@ model =
       doubleside: true
       offset:
         x: 12
-        y: 66+mainypos
+        y: 66
         z: 6
       length: [0,50]
       width: [0,50,27]
@@ -109,5 +106,3 @@ model =
       bump:
         position: 10
         size: 12
-
-return model;
