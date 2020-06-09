@@ -1,19 +1,19 @@
 return model =
-  name: 'ExoCruiser'
+  name: "Renevant"
   level: 7
   model: 5
-  size: 1.84
+  size: 2.1
   specs:
     shield:
       capacity: [380,380]
       reload: [14,14]
     generator:
-      capacity: [600,600]
-      reload: [90,90]
+      capacity: [500,500]
+      reload: [80,80]
     ship:
-      mass: 385
-      speed: [92,92]
-      rotation: [60,60]
+      mass: 650
+      speed: [60,60]
+      rotation: [50,50]
       acceleration: [50,50]
   bodies:
     main:
@@ -120,7 +120,7 @@ return model =
         x: 18
         y: 68
         z: 0
-      length: [140,4,8,32].mult(0.5)
+      length: [70,2,4,16]
       width: [62,50,172,174,40]
       angle: [0,0,0,0,0]
       position: [-12,-12,-24,-20,28]
